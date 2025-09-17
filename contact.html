@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contact — AcmeCo</title><link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a class="brand" href="index.html"><span class="brand-logo"></span><span class="brand-name">AcmeCo</span></a>
+      <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+      <ul id="primary-nav" class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <span class="kicker reveal">Get in touch</span>
+      <h1 class="reveal">We’d love to hear from you</h1>
+      <p class="reveal">Send a message and we’ll reply soon.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-2">
+      <form class="surface reveal" onsubmit="event.preventDefault(); alert('Submitted! (demo)');">
+        <div style="display:grid;gap:12px">
+          <input class="input" placeholder="Your name" required>
+          <input type="email" class="input" placeholder="Email" required>
+          <textarea class="textarea" rows="6" placeholder="How can we help?"></textarea>
+          <button class="button" type="submit">Send</button>
+        </div>
+      </form>
+      <div class="reveal">
+        <div class="card">
+          <h3>Direct</h3>
+          <p class="muted">Email: hello@example.com</p>
+          <p class="muted">Response within 1 business day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">© 2025 AcmeCo</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
